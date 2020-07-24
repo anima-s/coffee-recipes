@@ -1,0 +1,7 @@
+{
+  "name": "coffee-recipes",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
