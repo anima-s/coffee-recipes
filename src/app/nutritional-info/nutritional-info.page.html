@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>nutritional-info</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <ion-item class="list-container">
+    <ion-row>
+      <ion-item>
+        <ion-title slot="start" class="list-title">Method:</ion-title>
+      </ion-item>
+      <ion-list>
+        <ion-item *ngFor="let entry of method">
+          <ion-icon slot="start" name="radio-button-on-outline"></ion-icon>
+          {{entry}}
+          <ion-item class="list-entry-default"></ion-item>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+  </ion-item>
+  <ion-item class="list-container">
+    <ion-row>
+      <ion-item>
+        <ion-title slot="start" class="list-title">Nutrional Information:</ion-title>
+      </ion-item>
+      <ion-list class="list-entry-default">
+        <ion-item>Energy- {{nutritional_info.energy}}</ion-item>
+        <ion-item>Fat- {{nutritional_info.fat}}</ion-item>
+        <ion-item>Carbohydrates- {{nutritional_info.carbs}}</ion-item>
+        <ion-item>Protein- {{nutritional_info.protein}}</ion-item>
+        <ion-item>Sodium- {{nutritional_info.sodium}}</ion-item>
+      </ion-list>
+    </ion-row>
+  </ion-item>
 </ion-content>
