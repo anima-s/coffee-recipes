@@ -1,3 +1,12 @@
-<p>
-  coffee-list works!
-</p>
+<ion-list>
+  <!-- <ion-item [routerLink]="['/details',coffee.id]" *ngFor="let coffee of data" class="container"> -->
+  <ion-item *ngFor="let coffee of data" class="container">
+    <img [src]="coffee.imageUrl" (click)="navigateToRecipe(coffee.id)">
+    <ion-title class="bottom-left">{{coffee.label.toUpperCase()}}</ion-title>
+    <ion-img src="#" (click)="addToLikes($event.target)" class="likes bottom-right"></ion-img>
+  </ion-item>
+</ion-list>
+<ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+  <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
