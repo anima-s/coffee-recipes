@@ -1,0 +1,65 @@
+.cart-img{
+    height: 40px;
+    width: 50px;
+    // margin-inline-end: 0px;
+    // margin-top: 20px;
+    // margin-bottom: 0px;
+    padding-inline-start: 10px;
+    // padding-inline-end: 0px;
+}
+
+.my-custom-class {
+  --background: #222;
+}
+
+ion-toolbar {
+    --background: url(../../assets/images/bg_img.jpg) no-repeat center/cover fixed;
+}
+
+.appTitle {
+  font-weight: bolder;
+  color:white;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ion-icon {
+    width: 60px;
+    height: 60px;
+}
+
+ion-col{
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.coffee-name{
+  font-weight: bolder;
+    color:Black;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 0px;
+    padding-left: 10px;
+//     padding-right: 10px;
+}
+
+.item-name{
+    color:Black;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    --padding-start: 10px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 10px;
+    --inner-padding-end: 0px;
+}
+
+.main-container{
+    // background-color: brown;
+    display:flex;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    // --background: url(../../assets/images/bg_img.jpg) no-repeat center/cover fixed;
+}
