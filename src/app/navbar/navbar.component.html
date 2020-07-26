@@ -1,3 +1,56 @@
-<p>
-  navbar works!
-</p>
+<ion-header class="main-header">
+
+  <ion-toolbar class="toolbar">
+      <ion-row>
+        <ion-menu-button menu="custom"></ion-menu-button>
+        <ion-title class="appTitle">Coffee Recipes</ion-title>
+        <ion-col size="3">
+          <ion-row>
+            <ion-col>
+              <ion-icon name="flash" class="filledIcon"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-icon name="star"  class="filledIcon"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+</ion-header>
+
+<ion-menu menuId="custom" contentId="main">
+ 
+  <ion-content>
+    <img src="../../assets/images/navbar_img.jpeg">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="mail" slot="start"></ion-icon>
+        <ion-label>Favorites</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="paper-plane" slot="start"></ion-icon>
+        <ion-label>Shopping List</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="heart" slot="start"></ion-icon>
+        <ion-label>Our More Apps</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="archive" slot="start"></ion-icon>
+        <ion-label>Rate Us</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="trash" slot="start"></ion-icon>
+        <ion-label>Get Premium</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="trash" slot="start"></ion-icon>
+        <ion-label>Privacy Policy</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
