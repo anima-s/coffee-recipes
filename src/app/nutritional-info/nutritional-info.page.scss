@@ -1,0 +1,32 @@
+ion-item {
+  --padding-start: 10px;
+  --padding-end: 0px;
+  --inner-padding-start: 10px;
+  --inner-padding-end: 0px;
+  --inner-border-width: 0 0 0 0;
+}
+
+
+.list-container{
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --padding-bottom: 5px;
+  --padding-top: 5px;
+  --inner-border-width: round($number: 0.1);
+}
+
+.list-title{
+    color:brown;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.list-entry-default{
+    color:white;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+
+}
