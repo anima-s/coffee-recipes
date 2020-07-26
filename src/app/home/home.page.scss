@@ -1,27 +1,49 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.main-btn {
+    --padding-top: 0;
+    --padding-bottom: 0px;
+    --padding-start: 0px;
+    --padding-end: 0px;
+    --box-shadow: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 50%;
+    color:brown;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.main-btn.active{
+    border-bottom: 2px brown solid
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
-
-  margin: 0;
+.round-button{
+    font-style: normal;
+    text-transform: none;
+    color: brown;
+    padding: 5px 1px 5px 1px;
+    margin:0;
+    --border-radius: 64px;
+    --border-width: 2px;
+    --border-style: solid;
+    --background: white;
+    width: 25%;
 }
 
-#container a {
-  text-decoration: none;
+.round-button.active{
+    --background: brown;
+    //  font-size: 12px;
+    // font-weight: 500;
+    color:white;
+    // --color-activated: brown;
+    // --color-focused: #3880ff;
+    // --color-hover: #3880ff;
+    // --background-activated: transparent;
+    // --background-focused: #3880ff;
+    // --background-hover: #3880ff;
+    // --background-activated-opacity: 0;
+    // --background-focused-opacity: 0.12;
+    // --background-hover-opacity: 0.04;
 }
+
