@@ -1,0 +1,36 @@
+ion-img {
+  object-fit: cover;
+  
+}
+
+ion-menu-button {
+   display: flex;
+  color: white;
+}
+
+
+ion-icon {
+    &.filledIcon {
+      width: 25px;
+      height: 25px;
+      color: yellow;
+
+    }
+  
+    &.bigger {
+      width: 100px;
+      height: 100px;
+    }
+ 
+}
+
+.toolbar {
+  --background: url(../../assets/images/bg_img.jpg) no-repeat center/cover fixed;
+}
+
+.appTitle {
+  font-weight: bolder;
+  color:white;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
