@@ -1,3 +1,10 @@
-<p>
-  add-item works!
-</p>
+<ion-toolbar>
+  <ion-title class="appTitle">Shopping List</ion-title>
+  <ion-icon name="close-circle" color="light" slot="end" (click)="closePopover()"></ion-icon>
+</ion-toolbar>
+
+<ion-content class="main-container" id="popover">
+  <ion-input placeholder="Recipe Name" [(ngModel)]="recipe" class="text-input"></ion-input>
+  <ion-input placeholder="Ingredient" [(ngModel)]="item" class="text-input"></ion-input>
+  <ion-button outline (click)=addItemToCart()>Add Item</ion-button>
+</ion-content>
