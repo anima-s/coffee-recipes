@@ -15,6 +15,6 @@ import { CoffeeDetailsPage } from './coffee-details.page';
     IonicModule,
     CoffeeDetailsPageRoutingModule
   ],
-  declarations: [CoffeeDetailsPage]
+  declarations: [CoffeeDetailsPage],
 })
 export class CoffeeDetailsPageModule {}
