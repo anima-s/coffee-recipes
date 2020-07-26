@@ -1,9 +1,78 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
-    <ion-title>coffee-details</ion-title>
+    <ion-title class="appTitle">{{coffee.label}}</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
+
+<ion-content class="main-container">
+  <ion-toolbar>
+
+    <ion-title class="appTitle">{{coffee.label}}</ion-title>
+  </ion-toolbar>
+
+  <ion-item>
+    <img [src]="coffee.imageUrl" class="main-img">
+  
+
+    <ion-item class="flex-container bottom-left"></ion-item>
+
+
+    <ion-row class="container bottom-left">
+        <ion-col>
+          <ion-row>
+            <ion-item class="ion-divider-item">
+              <ion-icon slot="start" name="flash" class="filledIcon"></ion-icon>
+              <ion-title class="align-to-left">Energy</ion-title>
+            </ion-item>
+          </ion-row>
+          <ion-row class="simple-text">128cal</ion-row>
+        </ion-col>
+
+        <ion-col>
+          <ion-item class="ion-divider-item">
+            <ion-title class="align-to-left">|</ion-title>
+          </ion-item>
+        </ion-col>
+
+        <ion-col >
+          <ion-row>
+            <ion-item class="ion-divider-item">
+              <ion-icon slot="start" name="flash" class="filledIcon"></ion-icon>
+              <ion-title class="align-to-left">Servings</ion-title>
+            </ion-item>
+          </ion-row>
+          <ion-row class="simple-text">1</ion-row>
+        </ion-col>
+    </ion-row>
+
+    <ion-img src="#" (click)="addToLikes()" class="wishlistImg bottom-right"></ion-img>
+
+  </ion-item>
+
+  <ion-infinite-scroll style="height: 200px">
+    <ion-item class="ingredients-container">
+      <ion-row>
+        <ion-item>
+          <ion-title slot="start" class="ingredient-box-title">Ingredients:</ion-title>
+        </ion-item>
+        <ion-list>
+          <ion-item *ngFor="let ig of ingredients">
+            <ion-img src="../../assets/images/shopping-cart-before.png" class="cart-img" (click)="addOrDeleteFromCart($event.target)"></ion-img>
+            <ion-title class="ingredient-name">{{ig}}</ion-title>
+          </ion-item>
+        </ion-list>
+      </ion-row>
+    </ion-item>
+  </ion-infinite-scroll>
+
+
+<ion-button class="big-btn" (click)=showNutritionalInfo()>
+    METHOD AND NUTRITIONAL INFORMATION
+</ion-button>
+
+
+    
+<!-- <app-nutritional-info #nutritionalInfo [nutrition]="nutrition_data"></app-nutritional-info> -->
 
 </ion-content>
